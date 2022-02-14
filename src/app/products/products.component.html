@@ -1,0 +1,13 @@
+<h2>Estos son Nuestros Productos:</h2>
+
+<ul>
+    <li *ngFor="let i of posts">
+        <p>{{i.id}}</p><a [title]="['i.id']" [routerLink]="i.id">{{i.title}}</a>
+
+
+    </li>
+</ul>
+
+<!-- <div *ngFor="let post of posts">
+    <app-products-detail [post]="post"></app-products-detail>
+</div> -->
